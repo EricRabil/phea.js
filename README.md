@@ -10,6 +10,8 @@ yarn add @ericrabil/phea.js
 
 ## Example
 
+For a real example, take a look at [spotihue](https://github.com/EricRabil/spotihue)
+
 ```js
 import HueStream, { LoopEffect, Color } from "@ericrabil/phea.js";
 // Equivalent, for the plebeians:
@@ -91,3 +93,8 @@ class DTLS {
 
 ## Documentation
 [Docs live here.](docs/README.md)
+
+## Feedback
+Have an issue? Made something cool? Let me know!
+
+Open an issue or email me at [ericjrabil@gmail.com](mailto:ericjrabil@gmail.com). I'd love to hear from you!
