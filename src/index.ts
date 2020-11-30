@@ -4,6 +4,7 @@ export * from "./effect/effects/SeizureEffect";
 export * from "./effect/effects/StaticEffect";
 export * from "./effect/effects/TransitionEffect";
 export * from "./effect/effects/LoopEffect";
+export * from "./effect/effects/ModulationEffect";
 
 export * from "./effect/Effect";
 export * from "./effect/Mixer";

@@ -13,7 +13,7 @@ export abstract class Effect {
      * Returns the next color for a given light
      * @param light light to compute a color for
      */
-    abstract getColor(light: Light): EffectColor;
+    abstract getColor(light: Light): EffectColor | undefined;
     /**
      * Runs a render frame
      */

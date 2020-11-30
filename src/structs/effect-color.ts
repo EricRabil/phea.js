@@ -26,7 +26,7 @@ export namespace EffectColor {
      * @param color2 second color
      * @param ratio how much alpha the first color gets. the second color gets 1.0 - ratio
      */
-    export function mix(color1: EffectColor, color2: EffectColor, ratio: number, mixBrightness = false) {
+    export function mix(color1: EffectColor, color2: EffectColor, ratio: number, mixBrightness = false, mixAlpha = false) {
         const color = EffectColor.make();
         const iratio = 1.0 - ratio;
 
@@ -40,6 +40,19 @@ export namespace EffectColor {
                 color.brightness = (brightness1! * ratio) + (brightness2! * iratio);
             } else {
                 color.brightness = brightness1 || brightness2;
+            }
+        }
+
+        if (mixAlpha) {
+            const { alpha: alpha1 } = color1, { alpha: alpha2 } = color2;
+
+            const hasA1 = typeof alpha1 === "number";
+            const hasA2 = typeof alpha2 === "number";
+
+            if (hasA1 && hasA2) {
+                color.alpha = (alpha1! * ratio) + (alpha2! * iratio);
+            } else {
+                color.alpha = alpha1 || alpha2;
             }
         }
 
@@ -69,6 +82,21 @@ export namespace EffectColor {
         if (isNumber(blue)) color.blue *= blue!;
         if (isNumber(alpha) && isNumber(color.alpha)) color.alpha! *= alpha!;
         if (isNumber(brightness) && isNumber(color.brightness)) color.brightness! *= brightness!;
+
+        if (color.red > 255) color.red = 255;
+        else if (color.red < 0) color.red = 0;
+
+        if (color.green > 255) color.green = 255;
+        else if (color.green < 0) color.green = 0;
+
+        if (color.blue > 255) color.blue = 255;
+        else if (color.blue < 0) color.blue = 0;
+
+        if (isNumber(color.alpha) && color.alpha! > 1.0) color.alpha = 1.0;
+        else if (isNumber(color.alpha) && color.alpha! < 0) color.alpha = 0;
+
+        if (isNumber(color.brightness) && color.brightness! > 255) color.brightness = 255;
+        else if (isNumber(color.brightness) && color.brightness! < 0) color.brightness = 0;
 
         return color;
     }

@@ -12,18 +12,11 @@ export interface TransitionFrame {
     start: number;
 }
 
-export interface TransitionOptions {
-    /**
-     * Whether to modulate specific parameters in every color, e.g. amplify brightness, minimize red
-     */
-    modulate?: Partial<EffectColor>;
-}
-
 /**
  * Smoothly transitions between configured frames
  */
 export class TransitionEffect extends Effect {
-    constructor(public frames: TransitionFrame[], public options: TransitionOptions = {}) {
+    constructor(public frames: TransitionFrame[]) {
         super();
         
         this.frames = frames.sort(({ start: start1 }, { start: start2 }) => start1 - start2).reverse();
@@ -62,14 +55,9 @@ export class TransitionEffect extends Effect {
             // I use this ratio to mix the current color and the next, and it gradually mixes more and more until it reaches the next color.
             const remainingRatio = distanceFromNext / totalDistance;
 
-            color = EffectColor.mix(color, nextColor, remainingRatio, true);
+            color = EffectColor.mix(color, nextColor, remainingRatio, true, true);
         }
         
-        if (this.options.modulate) {
-            // Apply modulation parameters
-            color = EffectColor.modulate(color, this.options.modulate);
-        }
-
         this.currentColor = color;
     }
 

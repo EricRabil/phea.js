@@ -30,7 +30,7 @@ export class Mixer {
      * @param light light to apply effects to
      */
     applyEffectsOnLight(light: Light) {
-        let red = 0, green = 0, blue = 0, brightness = 255;
+        let red = 0, green = 0, blue = 0, brightness = 0;
 
         if (this.retainColor) {
             red = light.red;
@@ -43,18 +43,33 @@ export class Mixer {
             if (!effect.enabled) continue;
 
             const layerColor = effect.getColor(light);
-            const alpha = layerColor.alpha || 1.0;
+            if (!layerColor) continue;
+
+            if (typeof layerColor.brightness !== "number") layerColor.brightness = 255;
+            if (typeof layerColor.alpha !== "number") layerColor.alpha = 1.0;
+
+            const alpha = layerColor.alpha;
             const prevLayersAlpha = 1.0 - alpha;
 
-            red *= prevLayersAlpha;
-            green *= prevLayersAlpha;
-            blue *= prevLayersAlpha;
-            if (typeof layerColor.brightness === "number") brightness *= prevLayersAlpha;
+            if (layerColor.red >= 0 && layerColor.green <= 255) {
+                red *= prevLayersAlpha;
+                red += layerColor.red * alpha;
+            }
 
-            red += layerColor.red * alpha;
-            green += layerColor.green * alpha;
-            blue += layerColor.blue * alpha;
-            if (typeof layerColor.brightness === "number") brightness += layerColor.brightness * alpha;
+            if (layerColor.green >= 0 && layerColor.green <= 255) {
+                green *= prevLayersAlpha;
+                green += layerColor.green * alpha;
+            }
+
+            if (layerColor.blue >= 0 && layerColor.blue <= 255) {
+                blue *= prevLayersAlpha;
+                blue += layerColor.blue * alpha;
+            }
+
+            if (layerColor.brightness >= 0 && layerColor.brightness <= 255) {
+                brightness *= prevLayersAlpha;
+                brightness += layerColor.brightness * alpha;
+            }
         }
 
         light.red = red;
