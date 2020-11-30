@@ -1,4 +1,4 @@
-import HueStream, { LoopEffect, Color } from "phea.js";
+import HueStream, { LoopEffect, Color } from "@ericrabil/phea.js";
 
 async function run() {
     const ipAddresses = await HueStream.discover();

@@ -1,6 +1,6 @@
 {
   "name": "@ericrabil/phea.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.JS implementation of the Hue Entertainment API but it works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

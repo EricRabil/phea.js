@@ -1,4 +1,4 @@
-const { HueStream, LoopEffect, Color } = require("phea.js");
+const { HueStream, LoopEffect, Color } = require("@ericrabil/phea.js");
 
 async function run() {
     const ipAddresses = await HueStream.discover();
