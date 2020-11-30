@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "util"
+> [Globals](../README.md) / "util"
 
 # Module: "util"
 
@@ -20,7 +20,7 @@
 
 • `Const` **HueLog**: Debugger = Debug("phea")
 
-*Defined in src/util.ts:11*
+*Defined in [src/util.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/util.ts#L11)*
 
 ## Functions
 
@@ -28,7 +28,7 @@
 
 ▸ **sleep**(`ms`: number): Promise\<unknown>
 
-*Defined in src/util.ts:7*
+*Defined in [src/util.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/util.ts#L7)*
 
 Resolves a promise after the given time in ms
 

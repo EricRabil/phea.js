@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "docgen": "typedoc --excludePrivate --plugin typedoc-plugin-markdown --plugin typedoc-plugin-no-inherit src/webrtc-dtls.d.ts src/index.ts"
+    "docgen": "typedoc --excludePrivate --readme none --plugin typedoc-plugin-markdown --plugin typedoc-plugin-no-inherit src/webrtc-dtls.d.ts src/index.ts"
   },
   "dependencies": {
     "@nodertc/dtls": "^0.6.0",

@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["hue-stream"](../modules/_hue_stream_.md) / HueStream
+> [Globals](../README.md) / ["hue-stream"](../modules/_hue_stream_.md) / HueStream
 
 # Class: HueStream
 
@@ -52,7 +52,7 @@ Manages the streaming activity and mixer state
 
 •  **mixer**: [Mixer](_effect_mixer_.mixer.md) = new Mixer()
 
-*Defined in src/hue-stream.ts:45*
+*Defined in [src/hue-stream.ts:45](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L45)*
 
 Effect mixer instance
 
@@ -62,7 +62,7 @@ ___
 
 •  **options**: [HueStreamOptions](../interfaces/_hue_stream_.huestreamoptions.md)
 
-*Defined in src/hue-stream.ts:146*
+*Defined in [src/hue-stream.ts:146](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L146)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 •  **renderResult**: Promise\<void>
 
-*Defined in src/hue-stream.ts:177*
+*Defined in [src/hue-stream.ts:177](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L177)*
 
  This will resolve/reject the end result of the renering loop – in other words, it will not resolve until the render loop is ended, and it will not reject unless the render loop rejects.
 
@@ -80,7 +80,7 @@ ___
 
 •  **stream**: [Stream](_stream_.stream.md)
 
-*Defined in src/hue-stream.ts:49*
+*Defined in [src/hue-stream.ts:49](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L49)*
 
 Frame manager
 
@@ -90,7 +90,7 @@ Frame manager
 
 • get **blue**(): number
 
-*Defined in src/hue-stream.ts:297*
+*Defined in [src/hue-stream.ts:297](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L297)*
 
 Average light blue
 
@@ -98,7 +98,7 @@ Average light blue
 
 • set **blue**(`blue`: number): void
 
-*Defined in src/hue-stream.ts:290*
+*Defined in [src/hue-stream.ts:290](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L290)*
 
 Sets the blue value for all lights
 
@@ -116,7 +116,7 @@ ___
 
 • get **brightness**(): number
 
-*Defined in src/hue-stream.ts:255*
+*Defined in [src/hue-stream.ts:255](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L255)*
 
 Average light brightness
 
@@ -124,7 +124,7 @@ Average light brightness
 
 • set **brightness**(`brightness`: number): void
 
-*Defined in src/hue-stream.ts:248*
+*Defined in [src/hue-stream.ts:248](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L248)*
 
 Sets the brightness value for all lights
 
@@ -142,7 +142,7 @@ ___
 
 • get **effects**(): [Effect](_effect_effect_.effect.md)[]
 
-*Defined in src/hue-stream.ts:237*
+*Defined in [src/hue-stream.ts:237](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L237)*
 
 The effects used in the mixer
 
@@ -150,7 +150,7 @@ The effects used in the mixer
 
 • set **effects**(`effects`: [Effect](_effect_effect_.effect.md)[]): void
 
-*Defined in src/hue-stream.ts:241*
+*Defined in [src/hue-stream.ts:241](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L241)*
 
 The effects used in the mixer
 
@@ -168,7 +168,7 @@ ___
 
 • get **green**(): number
 
-*Defined in src/hue-stream.ts:283*
+*Defined in [src/hue-stream.ts:283](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L283)*
 
 Average green value of the lights
 
@@ -176,7 +176,7 @@ Average green value of the lights
 
 • set **green**(`green`: number): void
 
-*Defined in src/hue-stream.ts:276*
+*Defined in [src/hue-stream.ts:276](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L276)*
 
 Sets the green value for all lights
 
@@ -194,7 +194,7 @@ ___
 
 • get **red**(): number
 
-*Defined in src/hue-stream.ts:269*
+*Defined in [src/hue-stream.ts:269](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L269)*
 
 Average red value of the lights
 
@@ -202,7 +202,7 @@ Average red value of the lights
 
 • set **red**(`red`: number): void
 
-*Defined in src/hue-stream.ts:262*
+*Defined in [src/hue-stream.ts:262](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L262)*
 
 Sets the red value for all lights
 
@@ -222,7 +222,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:24*
+*Defined in [src/hue-stream.ts:24](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L24)*
 
 #### Parameters:
 
@@ -237,7 +237,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:25*
+*Defined in [src/hue-stream.ts:25](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L25)*
 
 #### Parameters:
 
@@ -252,7 +252,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:26*
+*Defined in [src/hue-stream.ts:26](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L26)*
 
 #### Parameters:
 
@@ -267,7 +267,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:27*
+*Defined in [src/hue-stream.ts:27](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L27)*
 
 #### Parameters:
 
@@ -282,7 +282,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:28*
+*Defined in [src/hue-stream.ts:28](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L28)*
 
 #### Parameters:
 
@@ -301,7 +301,7 @@ ___
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:30*
+*Defined in [src/hue-stream.ts:30](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L30)*
 
 #### Parameters:
 
@@ -316,7 +316,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:31*
+*Defined in [src/hue-stream.ts:31](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L31)*
 
 #### Parameters:
 
@@ -331,7 +331,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:32*
+*Defined in [src/hue-stream.ts:32](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L32)*
 
 #### Parameters:
 
@@ -346,7 +346,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:33*
+*Defined in [src/hue-stream.ts:33](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L33)*
 
 #### Parameters:
 
@@ -361,7 +361,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/hue-stream.ts:34*
+*Defined in [src/hue-stream.ts:34](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L34)*
 
 #### Parameters:
 
@@ -378,7 +378,7 @@ ___
 
 ▸ **render**(): Promise\<void>
 
-*Defined in src/hue-stream.ts:209*
+*Defined in [src/hue-stream.ts:209](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L209)*
 
 Renders the mixer by one
 
@@ -390,7 +390,7 @@ ___
 
 ▸ **renderSingleFrame**(): Promise\<void>
 
-*Defined in src/hue-stream.ts:202*
+*Defined in [src/hue-stream.ts:202](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L202)*
 
 Renders a single frame in the session.
 
@@ -402,7 +402,7 @@ ___
 
 ▸ **start**(): Promise\<void>
 
-*Defined in src/hue-stream.ts:182*
+*Defined in [src/hue-stream.ts:182](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L182)*
 
 Starts the Entertainment session.
 
@@ -414,7 +414,7 @@ ___
 
 ▸ **stop**(): Promise\<void>
 
-*Defined in src/hue-stream.ts:193*
+*Defined in [src/hue-stream.ts:193](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L193)*
 
 Stops the Entertainment session.
 
@@ -426,7 +426,7 @@ ___
 
 ▸ `Static`**createGroup**(`__namedParameters`: { host: string ; username: string  }, `lights`: (string \| number)[], `name?`: string): Promise\<string>
 
-*Defined in src/hue-stream.ts:101*
+*Defined in [src/hue-stream.ts:101](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L101)*
 
 Creates an entertainment group with the given lights and name
 
@@ -446,7 +446,7 @@ ___
 
 ▸ `Static`**discover**(`upnp?`: boolean): Promise\<string[]>
 
-*Defined in src/hue-stream.ts:55*
+*Defined in [src/hue-stream.ts:55](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L55)*
 
 Discovers all bridges on your LAN
 
@@ -464,7 +464,7 @@ ___
 
 ▸ `Static`**lightIDs**(`auth`: [DTLSConnectionOptions](../interfaces/_dtls_.dtlsconnectionoptions.md)): Promise\<string[]>
 
-*Defined in src/hue-stream.ts:89*
+*Defined in [src/hue-stream.ts:89](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L89)*
 
 Returns an array of light IDs from the Hue API
 
@@ -482,7 +482,7 @@ ___
 
 ▸ `Static`**lights**(`__namedParameters`: { host: string ; username: string  }): Promise\<HueLight[]>
 
-*Defined in src/hue-stream.ts:79*
+*Defined in [src/hue-stream.ts:79](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L79)*
 
 Returns an array of light objects from the Hue API
 
@@ -500,7 +500,7 @@ ___
 
 ▸ `Static`**make**(`options`: Partial\<[HueStreamOptions](../interfaces/_hue_stream_.huestreamoptions.md)>): Promise\<[HueStream](_hue_stream_.huestream.md)>
 
-*Defined in src/hue-stream.ts:120*
+*Defined in [src/hue-stream.ts:120](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L120)*
 
 Crafts a HueStream instance with the given options.
 
@@ -520,7 +520,7 @@ ___
 
 ▸ `Static`**register**(`ip`: string): Promise\<{ psk: string ; username: string  }>
 
-*Defined in src/hue-stream.ts:65*
+*Defined in [src/hue-stream.ts:65](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L65)*
 
 Registers with the given Bridge IP
 

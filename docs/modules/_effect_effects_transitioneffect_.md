@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "effect/effects/TransitionEffect"
+> [Globals](../README.md) / "effect/effects/TransitionEffect"
 
 # Module: "effect/effects/TransitionEffect"
 

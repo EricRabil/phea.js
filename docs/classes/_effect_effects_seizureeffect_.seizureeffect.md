@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/effects/SeizureEffect"](../modules/_effect_effects_seizureeffect_.md) / SeizureEffect
+> [Globals](../README.md) / ["effect/effects/SeizureEffect"](../modules/_effect_effects_seizureeffect_.md) / SeizureEffect
 
 # Class: SeizureEffect
 
@@ -39,7 +39,7 @@ Specifically DO NOT use this if you are sensitive to flashing lights.
 
 \+ **new SeizureEffect**(`options`: [SeizureOptions](../interfaces/_effect_effects_seizureeffect_.seizureoptions.md)): [SeizureEffect](_effect_effects_seizureeffect_.seizureeffect.md)
 
-*Defined in src/effect/effects/SeizureEffect.ts:24*
+*Defined in [src/effect/effects/SeizureEffect.ts:24](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L24)*
 
 #### Parameters:
 
@@ -57,7 +57,7 @@ Name | Type |
 
 *Overrides [Effect](_effect_effect_.effect.md).[enabled](_effect_effect_.effect.md#enabled)*
 
-*Defined in src/effect/effects/SeizureEffect.ts:58*
+*Defined in [src/effect/effects/SeizureEffect.ts:58](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L58)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[finished](_effect_effect_.effect.md#finished)*
 
-*Defined in src/effect/effects/SeizureEffect.ts:59*
+*Defined in [src/effect/effects/SeizureEffect.ts:59](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L59)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 •  **frames**: number = 0
 
-*Defined in src/effect/effects/SeizureEffect.ts:24*
+*Defined in [src/effect/effects/SeizureEffect.ts:24](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L24)*
 
 How many frames into a color we are
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [Effect](_effect_effect_.effect.md).[now](_effect_effect_.effect.md#now)*
 
-*Defined in src/effect/Effect.ts:11*
+*Defined in [src/effect/Effect.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Effect.ts#L11)*
 
 Singleton reference to Date.now() – you don't/shouldn't update this, it is handled for you. All effects will have the same reference to Date.now() in any given frame.
 
@@ -97,7 +97,7 @@ ___
 
 •  **options**: [SeizureOptions](../interfaces/_effect_effects_seizureeffect_.seizureoptions.md)
 
-*Defined in src/effect/effects/SeizureEffect.ts:26*
+*Defined in [src/effect/effects/SeizureEffect.ts:26](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L26)*
 
 ## Methods
 
@@ -107,7 +107,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[getColor](_effect_effect_.effect.md#getcolor)*
 
-*Defined in src/effect/effects/SeizureEffect.ts:40*
+*Defined in [src/effect/effects/SeizureEffect.ts:40](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L40)*
 
 **Returns:** [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
@@ -119,6 +119,6 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[render](_effect_effect_.effect.md#render)*
 
-*Defined in src/effect/effects/SeizureEffect.ts:44*
+*Defined in [src/effect/effects/SeizureEffect.ts:44](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/SeizureEffect.ts#L44)*
 
 **Returns:** void

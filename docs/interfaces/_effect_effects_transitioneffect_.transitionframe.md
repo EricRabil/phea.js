@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/effects/TransitionEffect"](../modules/_effect_effects_transitioneffect_.md) / TransitionFrame
+> [Globals](../README.md) / ["effect/effects/TransitionEffect"](../modules/_effect_effects_transitioneffect_.md) / TransitionFrame
 
 # Interface: TransitionFrame
 
@@ -21,7 +21,7 @@
 
 •  **color**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
-*Defined in src/effect/effects/TransitionEffect.ts:8*
+*Defined in [src/effect/effects/TransitionEffect.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/TransitionEffect.ts#L8)*
 
 The color to mix to
 
@@ -31,6 +31,6 @@ ___
 
 •  **start**: number
 
-*Defined in src/effect/effects/TransitionEffect.ts:12*
+*Defined in [src/effect/effects/TransitionEffect.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/TransitionEffect.ts#L12)*
 
 Explicit unix timestamp when the transition starts

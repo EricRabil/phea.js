@@ -58,5 +58,36 @@ async function run() {
 run();
 ```
 
+## Writing your own effects
+
+Subclass the [Effect](https://github.com/EricRabil/phea.js/blob/main/src/effect/Effect.ts) class, then push it to `stream.effects`.
+
+There's [a few example effects](https://github.com/EricRabil/phea.js/blob/main/src/effect/effects) to get you started.
+
+## Colors
+
+phea.js has two Color structs – `Color` and `EffectColor`, which extends `Color`.
+
+`Color` is simply an RGB object, while `EffectColor` adds opacity and brightness.
+
+- `red`, `green`, `blue`, and `brightness` are all values from 0.0 – 255.0.
+- `Color` and `EffectColor` offer a variety of utility functions for mixing and matching colors. Read about them on their respective doc pages.
+
+## Using the DTLS client directly
+
+Don't want to use my wrapper? :( That's fine. There's a `DTLS` export that lets you interact with the API directly. Pass it an instance of the Hue API per [`node-hue-api`](https://github.com/peter-murray/node-hue-api), the groupID, and the credentials.
+
+```ts
+interface DTLSConnectionOptions {
+    host: string;
+    username: string;
+    psk: string;
+}
+
+class DTLS {
+    constructor(public readonly hue: Api, public lights: number[], gamuts: (ColorGamut | null)[], public group: string, public options: DTLSConnectionOptions);
+}
+```
+
 ## Documentation
-[Docs live here.](docs/globals.md)
+[Docs live here.](docs/README.md)

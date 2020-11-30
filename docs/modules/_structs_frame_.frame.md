@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/frame"](_structs_frame_.md) / Frame
+> [Globals](../README.md) / ["structs/frame"](_structs_frame_.md) / Frame
 
 # Namespace: Frame
 
@@ -28,7 +28,7 @@
 
 •  **brightness**: number \| null
 
-*Defined in src/structs/frame.ts:8*
+*Defined in [src/structs/frame.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L8)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 •  **color**: [Color](_structs_color_.color.md)
 
-*Defined in src/structs/frame.ts:7*
+*Defined in [src/structs/frame.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L7)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 •  **gamut**: [ColorGamut](../interfaces/_structs_light_.colorgamut.md) \| null
 
-*Defined in src/structs/frame.ts:9*
+*Defined in [src/structs/frame.ts:9](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L9)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 •  **light**: number
 
-*Defined in src/structs/frame.ts:6*
+*Defined in [src/structs/frame.ts:6](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L6)*
 
 ## Variables
 
@@ -60,7 +60,7 @@ ___
 
 •  **rgbToXY**: rgbToXY
 
-*Defined in src/structs/frame.ts:13*
+*Defined in [src/structs/frame.ts:13](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L13)*
 
 ## Functions
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **asBuffer**(`frames`: [Frame](_structs_frame_.frame.md)[], `seqNr`: number): Buffer
 
-*Defined in src/structs/frame.ts:48*
+*Defined in [src/structs/frame.ts:48](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L48)*
 
 Serialize an array of frames to a Buffer ready to be sent
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **write**(`__namedParameters`: { brightness: null \| number ; color: { blue: number ; green: number ; red: number  } ; gamut: null \| [ColorGamut](../interfaces/_structs_light_.colorgamut.md) ; light: number  }, `useXY`: boolean, `buffer`: number[]): void
 
-*Defined in src/structs/frame.ts:21*
+*Defined in [src/structs/frame.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/frame.ts#L21)*
 
 Writes a frame to a buffer array
 

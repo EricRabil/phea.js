@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "effect/effects/SeizureEffect"
+> [Globals](../README.md) / "effect/effects/SeizureEffect"
 
 # Module: "effect/effects/SeizureEffect"
 

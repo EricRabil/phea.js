@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/light"](../modules/_structs_light_.md) / Light
+> [Globals](../README.md) / ["structs/light"](../modules/_structs_light_.md) / Light
 
 # Class: Light
 
@@ -35,7 +35,7 @@ Manages the state of a specific light. Mutations here will be directly visible o
 
 •  **blue**: number = 255
 
-*Defined in src/structs/light.ts:36*
+*Defined in [src/structs/light.ts:36](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L36)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 •  **brightness**: number = 255
 
-*Defined in src/structs/light.ts:37*
+*Defined in [src/structs/light.ts:37](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L37)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 •  **gamut**: [ColorGamut](../interfaces/_structs_light_.colorgamut.md) \| null = null
 
-*Defined in src/structs/light.ts:38*
+*Defined in [src/structs/light.ts:38](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L38)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 •  **green**: number = 255
 
-*Defined in src/structs/light.ts:35*
+*Defined in [src/structs/light.ts:35](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L35)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 •  **id**: number
 
-*Defined in src/structs/light.ts:33*
+*Defined in [src/structs/light.ts:33](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L33)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 •  **red**: number = 255
 
-*Defined in src/structs/light.ts:34*
+*Defined in [src/structs/light.ts:34](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L34)*
 
 ## Accessors
 
@@ -83,7 +83,7 @@ ___
 
 • get **frame**(): [Frame](../modules/_structs_frame_.frame.md)
 
-*Defined in src/structs/light.ts:40*
+*Defined in [src/structs/light.ts:40](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L40)*
 
 **Returns:** [Frame](../modules/_structs_frame_.frame.md)
 
@@ -93,7 +93,7 @@ ___
 
 ▸ `Static`**make**(`api`: Api, `id`: number \| string): Promise\<[Light](_structs_light_.light.md)>
 
-*Defined in src/structs/light.ts:21*
+*Defined in [src/structs/light.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L21)*
 
 #### Parameters:
 

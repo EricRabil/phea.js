@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "structs/effect-color"
+> [Globals](../README.md) / "structs/effect-color"
 
 # Module: "structs/effect-color"
 

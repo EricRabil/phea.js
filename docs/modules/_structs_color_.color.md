@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/color"](_structs_color_.md) / Color
+> [Globals](../README.md) / ["structs/color"](_structs_color_.md) / Color
 
 # Namespace: Color
 
@@ -41,7 +41,9 @@ Base object for representing an RGB color
 
 •  **blue**: number
 
-*Defined in src/structs/color.ts:7*
+*Defined in [src/structs/color.ts:16](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L16)*
+
+blue value from 0-255
 
 ___
 
@@ -49,7 +51,9 @@ ___
 
 •  **green**: number
 
-*Defined in src/structs/color.ts:6*
+*Defined in [src/structs/color.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L12)*
+
+green value from 0-255
 
 ___
 
@@ -57,7 +61,9 @@ ___
 
 •  **red**: number
 
-*Defined in src/structs/color.ts:5*
+*Defined in [src/structs/color.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L8)*
+
+red value from 0-255
 
 ## Variables
 
@@ -65,7 +71,7 @@ ___
 
 • `Const` **GREENBLUE**: [Color](_structs_color_.color.md) = mergeEvenly(GREEN, BLUE)
 
-*Defined in src/structs/color.ts:87*
+*Defined in [src/structs/color.ts:96](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L96)*
 
 ___
 
@@ -73,7 +79,7 @@ ___
 
 • `Const` **REDBLUE**: [Color](_structs_color_.color.md) = mergeEvenly(RED, BLUE)
 
-*Defined in src/structs/color.ts:86*
+*Defined in [src/structs/color.ts:95](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L95)*
 
 ___
 
@@ -81,7 +87,7 @@ ___
 
 • `Const` **REDGREEN**: [Color](_structs_color_.color.md) = mergeEvenly(RED, GREEN)
 
-*Defined in src/structs/color.ts:85*
+*Defined in [src/structs/color.ts:94](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L94)*
 
 ## Functions
 
@@ -89,7 +95,7 @@ ___
 
 ▸ **dilute**(`__namedParameters`: { blue: number ; green: number ; red: number  }, `ratio`: number): object
 
-*Defined in src/structs/color.ts:16*
+*Defined in [src/structs/color.ts:25](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L25)*
 
 Amplifies/dilutes a color with the given ratio
 
@@ -114,7 +120,7 @@ ___
 
 ▸ **mergeEvenly**(...`colors`: [Color](_structs_color_.color.md)[]): [Color](_structs_color_.color.md)
 
-*Defined in src/structs/color.ts:49*
+*Defined in [src/structs/color.ts:58](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L58)*
 
 Takes a series of colors and merges them using an even ratio
 
@@ -132,7 +138,7 @@ ___
 
 ▸ **mergePartials**(`colors`: [Color](_structs_color_.color.md)[]): [Color](_structs_color_.color.md)
 
-*Defined in src/structs/color.ts:37*
+*Defined in [src/structs/color.ts:46](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L46)*
 
 Merges a series of expectedly partial colors into a single color
 
@@ -150,7 +156,7 @@ ___
 
 ▸ **sum**\<T>(`key`: T, `colors`: [Color](_structs_color_.color.md)[]): number
 
-*Defined in src/structs/color.ts:29*
+*Defined in [src/structs/color.ts:38](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L38)*
 
 Returns the sum of a given color property
 
@@ -175,7 +181,7 @@ Name | Type | Description |
 
 ▪ `Const` **BLACK**: object
 
-*Defined in src/structs/color.ts:79*
+*Defined in [src/structs/color.ts:88](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L88)*
 
 #### Properties:
 
@@ -191,7 +197,7 @@ ___
 
 ▪ `Const` **BLUE**: object
 
-*Defined in src/structs/color.ts:67*
+*Defined in [src/structs/color.ts:76](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L76)*
 
 #### Properties:
 
@@ -207,7 +213,7 @@ ___
 
 ▪ `Const` **GREEN**: object
 
-*Defined in src/structs/color.ts:61*
+*Defined in [src/structs/color.ts:70](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L70)*
 
 #### Properties:
 
@@ -223,7 +229,7 @@ ___
 
 ▪ `Const` **RED**: object
 
-*Defined in src/structs/color.ts:55*
+*Defined in [src/structs/color.ts:64](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L64)*
 
 #### Properties:
 
@@ -239,7 +245,7 @@ ___
 
 ▪ `Const` **WHITE**: object
 
-*Defined in src/structs/color.ts:73*
+*Defined in [src/structs/color.ts:82](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L82)*
 
 #### Properties:
 

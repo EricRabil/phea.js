@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["hue-stream"](../modules/_hue_stream_.md) / HueStreamOptions
+> [Globals](../README.md) / ["hue-stream"](../modules/_hue_stream_.md) / HueStreamOptions
 
 # Interface: HueStreamOptions
 
@@ -26,7 +26,7 @@
 
 • `Optional` **api**: Api
 
-*Defined in src/hue-stream.ts:15*
+*Defined in [src/hue-stream.ts:15](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L15)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • `Optional` **auth**: [DTLSConnectionOptions](_dtls_.dtlsconnectionoptions.md)
 
-*Defined in src/hue-stream.ts:14*
+*Defined in [src/hue-stream.ts:14](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L14)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 •  **engine**: [DTLS](../classes/_dtls_.dtls.md)
 
-*Defined in src/hue-stream.ts:12*
+*Defined in [src/hue-stream.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L12)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • `Optional` **group**: undefined \| string
 
-*Defined in src/hue-stream.ts:16*
+*Defined in [src/hue-stream.ts:16](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L16)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • `Optional` **lightStateChangedHandler**: undefined \| (lights: [Light](../classes/_structs_light_.light.md)[]) => unknown
 
-*Defined in src/hue-stream.ts:17*
+*Defined in [src/hue-stream.ts:17](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L17)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 •  **lights**: [Light](../classes/_structs_light_.light.md)[]
 
-*Defined in src/hue-stream.ts:13*
+*Defined in [src/hue-stream.ts:13](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L13)*
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 •  **updateFrequency**: number
 
-*Defined in src/hue-stream.ts:11*
+*Defined in [src/hue-stream.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/hue-stream.ts#L11)*

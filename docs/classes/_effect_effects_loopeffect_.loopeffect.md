@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/effects/LoopEffect"](../modules/_effect_effects_loopeffect_.md) / LoopEffect
+> [Globals](../README.md) / ["effect/effects/LoopEffect"](../modules/_effect_effects_loopeffect_.md) / LoopEffect
 
 # Class: LoopEffect
 
@@ -41,7 +41,7 @@ Smooth transitions between each color
 
 \+ **new LoopEffect**(`options`: [LoopOptions](../interfaces/_effect_effects_loopeffect_.loopoptions.md)): [LoopEffect](_effect_effects_loopeffect_.loopeffect.md)
 
-*Defined in src/effect/effects/LoopEffect.ts:13*
+*Defined in [src/effect/effects/LoopEffect.ts:13](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L13)*
 
 #### Parameters:
 
@@ -57,7 +57,7 @@ Name | Type |
 
 •  **currentColor**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md) = this.options.colors[0]
 
-*Defined in src/effect/effects/LoopEffect.ts:21*
+*Defined in [src/effect/effects/LoopEffect.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L21)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 •  **currentIndex**: number = 0
 
-*Defined in src/effect/effects/LoopEffect.ts:20*
+*Defined in [src/effect/effects/LoopEffect.ts:20](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L20)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[enabled](_effect_effect_.effect.md#enabled)*
 
-*Defined in src/effect/effects/LoopEffect.ts:50*
+*Defined in [src/effect/effects/LoopEffect.ts:50](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L50)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[finished](_effect_effect_.effect.md#finished)*
 
-*Defined in src/effect/effects/LoopEffect.ts:51*
+*Defined in [src/effect/effects/LoopEffect.ts:51](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L51)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 •  **frame**: number = 0
 
-*Defined in src/effect/effects/LoopEffect.ts:18*
+*Defined in [src/effect/effects/LoopEffect.ts:18](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L18)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 •  **nextColor**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md) = this.options.colors[1]
 
-*Defined in src/effect/effects/LoopEffect.ts:22*
+*Defined in [src/effect/effects/LoopEffect.ts:22](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L22)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 *Inherited from [Effect](_effect_effect_.effect.md).[now](_effect_effect_.effect.md#now)*
 
-*Defined in src/effect/Effect.ts:11*
+*Defined in [src/effect/Effect.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Effect.ts#L11)*
 
 Singleton reference to Date.now() – you don't/shouldn't update this, it is handled for you. All effects will have the same reference to Date.now() in any given frame.
 
@@ -121,7 +121,7 @@ ___
 
 •  **options**: [LoopOptions](../interfaces/_effect_effects_loopeffect_.loopoptions.md)
 
-*Defined in src/effect/effects/LoopEffect.ts:14*
+*Defined in [src/effect/effects/LoopEffect.ts:14](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L14)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 •  **resultColor**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
-*Defined in src/effect/effects/LoopEffect.ts:24*
+*Defined in [src/effect/effects/LoopEffect.ts:24](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L24)*
 
 ## Methods
 
@@ -139,7 +139,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[getColor](_effect_effect_.effect.md#getcolor)*
 
-*Defined in src/effect/effects/LoopEffect.ts:26*
+*Defined in [src/effect/effects/LoopEffect.ts:26](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L26)*
 
 **Returns:** [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
@@ -151,6 +151,6 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[render](_effect_effect_.effect.md#render)*
 
-*Defined in src/effect/effects/LoopEffect.ts:30*
+*Defined in [src/effect/effects/LoopEffect.ts:30](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L30)*
 
 **Returns:** void

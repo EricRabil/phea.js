@@ -2,8 +2,17 @@
  * Base object for representing an RGB color
  */
 export interface Color {
+    /**
+     * red value from 0-255
+     */
     red: number;
+    /**
+     * green value from 0-255
+     */
     green: number;
+    /**
+     * blue value from 0-255
+     */
     blue: number;
 }
 

@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "effect/effects/LoopEffect"
+> [Globals](../README.md) / "effect/effects/LoopEffect"
 
 # Module: "effect/effects/LoopEffect"
 

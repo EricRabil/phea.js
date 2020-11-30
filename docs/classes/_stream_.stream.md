@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["stream"](../modules/_stream_.md) / Stream
+> [Globals](../README.md) / ["stream"](../modules/_stream_.md) / Stream
 
 # Class: Stream
 
@@ -32,7 +32,7 @@ Manages the framerate for refreshing
 
 \+ **new Stream**(`options`: [StreamOptions](../interfaces/_stream_.streamoptions.md)): [Stream](_stream_.stream.md)
 
-*Defined in src/stream.ts:29*
+*Defined in [src/stream.ts:29](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L29)*
 
 #### Parameters:
 
@@ -48,7 +48,7 @@ Name | Type |
 
 •  **options**: [StreamOptions](../interfaces/_stream_.streamoptions.md)
 
-*Defined in src/stream.ts:31*
+*Defined in [src/stream.ts:31](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L31)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 •  **running**: boolean = false
 
-*Defined in src/stream.ts:29*
+*Defined in [src/stream.ts:29](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L29)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **renderSingleFrame**(): Promise\<[void, void]>
 
-*Defined in src/stream.ts:60*
+*Defined in [src/stream.ts:60](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L60)*
 
 Renders a single frame
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **renderThread**(): Promise\<void>
 
-*Defined in src/stream.ts:38*
+*Defined in [src/stream.ts:38](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L38)*
 
 Asynchronously runs the render loop
 

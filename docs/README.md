@@ -1,8 +1,8 @@
-**[phea.js](README.md)**
+**[@ericrabil/phea.js](README.md)**
 
 > Globals
 
-# phea.js
+# @ericrabil/phea.js
 
 ## Index
 

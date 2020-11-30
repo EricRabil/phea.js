@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "effect/effects/StaticEffect"
+> [Globals](../README.md) / "effect/effects/StaticEffect"
 
 # Module: "effect/effects/StaticEffect"
 

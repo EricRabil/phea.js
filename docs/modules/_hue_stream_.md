@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "hue-stream"
+> [Globals](../README.md) / "hue-stream"
 
 # Module: "hue-stream"
 

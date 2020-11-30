@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "structs/frame"
+> [Globals](../README.md) / "structs/frame"
 
 # Module: "structs/frame"
 

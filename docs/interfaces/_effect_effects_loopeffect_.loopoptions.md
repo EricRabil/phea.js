@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/effects/LoopEffect"](../modules/_effect_effects_loopeffect_.md) / LoopOptions
+> [Globals](../README.md) / ["effect/effects/LoopEffect"](../modules/_effect_effects_loopeffect_.md) / LoopOptions
 
 # Interface: LoopOptions
 
@@ -21,7 +21,7 @@
 
 •  **colors**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md)[]
 
-*Defined in src/effect/effects/LoopEffect.ts:6*
+*Defined in [src/effect/effects/LoopEffect.ts:6](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L6)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 •  **framesPerColor**: number
 
-*Defined in src/effect/effects/LoopEffect.ts:7*
+*Defined in [src/effect/effects/LoopEffect.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/LoopEffect.ts#L7)*

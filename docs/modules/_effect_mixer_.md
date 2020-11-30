@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "effect/Mixer"
+> [Globals](../README.md) / "effect/Mixer"
 
 # Module: "effect/Mixer"
 

@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/effects/StaticEffect"](../modules/_effect_effects_staticeffect_.md) / StaticEffect
+> [Globals](../README.md) / ["effect/effects/StaticEffect"](../modules/_effect_effects_staticeffect_.md) / StaticEffect
 
 # Class: StaticEffect
 
@@ -36,7 +36,7 @@ Returns a single color, forever. This can be mutated externally to make it not a
 
 \+ **new StaticEffect**(`color`: [EffectColor](../modules/_structs_effect_color_.effectcolor.md)): [StaticEffect](_effect_effects_staticeffect_.staticeffect.md)
 
-*Defined in src/effect/effects/StaticEffect.ts:7*
+*Defined in [src/effect/effects/StaticEffect.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L7)*
 
 #### Parameters:
 
@@ -52,7 +52,7 @@ Name | Type |
 
 •  **color**: [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
-*Defined in src/effect/effects/StaticEffect.ts:8*
+*Defined in [src/effect/effects/StaticEffect.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L8)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[enabled](_effect_effect_.effect.md#enabled)*
 
-*Defined in src/effect/effects/StaticEffect.ts:20*
+*Defined in [src/effect/effects/StaticEffect.ts:20](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L20)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[finished](_effect_effect_.effect.md#finished)*
 
-*Defined in src/effect/effects/StaticEffect.ts:21*
+*Defined in [src/effect/effects/StaticEffect.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L21)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 *Inherited from [Effect](_effect_effect_.effect.md).[now](_effect_effect_.effect.md#now)*
 
-*Defined in src/effect/Effect.ts:11*
+*Defined in [src/effect/Effect.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Effect.ts#L11)*
 
 Singleton reference to Date.now() – you don't/shouldn't update this, it is handled for you. All effects will have the same reference to Date.now() in any given frame.
 
@@ -94,7 +94,7 @@ Singleton reference to Date.now() – you don't/shouldn't update this, it is ha
 
 *Overrides [Effect](_effect_effect_.effect.md).[getColor](_effect_effect_.effect.md#getcolor)*
 
-*Defined in src/effect/effects/StaticEffect.ts:12*
+*Defined in [src/effect/effects/StaticEffect.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L12)*
 
 **Returns:** [EffectColor](../modules/_structs_effect_color_.effectcolor.md)
 
@@ -106,6 +106,6 @@ ___
 
 *Overrides [Effect](_effect_effect_.effect.md).[render](_effect_effect_.effect.md#render)*
 
-*Defined in src/effect/effects/StaticEffect.ts:16*
+*Defined in [src/effect/effects/StaticEffect.ts:16](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/effects/StaticEffect.ts#L16)*
 
 **Returns:** void

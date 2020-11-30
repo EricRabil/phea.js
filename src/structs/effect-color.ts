@@ -1,7 +1,13 @@
 import { Color } from "./color";
 
 export interface EffectColor extends Color {
+    /**
+     * brightness value from 0-255
+     */
     brightness?: number;
+    /**
+     * opacity from 0.0-1.0, defaults to 1.0
+     */
     alpha?: number;
 }
 

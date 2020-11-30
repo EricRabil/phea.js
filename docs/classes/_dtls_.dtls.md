@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["dtls"](../modules/_dtls_.md) / DTLS
+> [Globals](../README.md) / ["dtls"](../modules/_dtls_.md) / DTLS
 
 # Class: DTLS
 
@@ -40,7 +40,7 @@ Manages the DTLS connection to the Hue Entertainment API
 
 •  **group**: string
 
-*Defined in src/dtls.ts:73*
+*Defined in [src/dtls.ts:73](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L73)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • `Readonly` **hue**: Api
 
-*Defined in src/dtls.ts:73*
+*Defined in [src/dtls.ts:73](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L73)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 •  **lights**: number[]
 
-*Defined in src/dtls.ts:73*
+*Defined in [src/dtls.ts:73](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L73)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 •  **options**: [DTLSConnectionOptions](../interfaces/_dtls_.dtlsconnectionoptions.md)
 
-*Defined in src/dtls.ts:73*
+*Defined in [src/dtls.ts:73](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L73)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 •  **running**: boolean = false
 
-*Defined in src/dtls.ts:42*
+*Defined in [src/dtls.ts:42](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L42)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 •  **sequenceNumber**: number = 0
 
-*Defined in src/dtls.ts:43*
+*Defined in [src/dtls.ts:43](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L43)*
 
 ## Methods
 
@@ -90,7 +90,7 @@ ___
 
 *Overrides void*
 
-*Defined in src/dtls.ts:19*
+*Defined in [src/dtls.ts:19](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L19)*
 
 #### Parameters:
 
@@ -105,7 +105,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:20*
+*Defined in [src/dtls.ts:20](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L20)*
 
 #### Parameters:
 
@@ -120,7 +120,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:21*
+*Defined in [src/dtls.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L21)*
 
 #### Parameters:
 
@@ -135,7 +135,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:22*
+*Defined in [src/dtls.ts:22](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L22)*
 
 #### Parameters:
 
@@ -150,7 +150,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:23*
+*Defined in [src/dtls.ts:23](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L23)*
 
 #### Parameters:
 
@@ -165,7 +165,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:24*
+*Defined in [src/dtls.ts:24](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L24)*
 
 #### Parameters:
 
@@ -184,7 +184,7 @@ ___
 
 *Overrides void*
 
-*Defined in src/dtls.ts:26*
+*Defined in [src/dtls.ts:26](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L26)*
 
 #### Parameters:
 
@@ -199,7 +199,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:27*
+*Defined in [src/dtls.ts:27](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L27)*
 
 #### Parameters:
 
@@ -214,7 +214,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:28*
+*Defined in [src/dtls.ts:28](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L28)*
 
 #### Parameters:
 
@@ -229,7 +229,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:29*
+*Defined in [src/dtls.ts:29](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L29)*
 
 #### Parameters:
 
@@ -244,7 +244,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:30*
+*Defined in [src/dtls.ts:30](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L30)*
 
 #### Parameters:
 
@@ -259,7 +259,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in src/dtls.ts:31*
+*Defined in [src/dtls.ts:31](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L31)*
 
 #### Parameters:
 
@@ -276,7 +276,7 @@ ___
 
 ▸ **sendFrames**(`frames`: [Frame](../modules/_structs_frame_.frame.md)[]): Promise\<void>
 
-*Defined in src/dtls.ts:173*
+*Defined in [src/dtls.ts:173](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L173)*
 
 Sends the given frames over the entertainment API
 
@@ -294,7 +294,7 @@ ___
 
 ▸ **start**(): Promise\<void>
 
-*Defined in src/dtls.ts:85*
+*Defined in [src/dtls.ts:85](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L85)*
 
 Starts the DTLS session.
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **stop**(): Promise\<void>
 
-*Defined in src/dtls.ts:157*
+*Defined in [src/dtls.ts:157](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L157)*
 
 Gracefully closes the session
 
@@ -318,7 +318,7 @@ ___
 
 ▸ `Static`**make**(`hue`: Api, `groupID`: string, `options`: [DTLSConnectionOptions](../interfaces/_dtls_.dtlsconnectionoptions.md)): Promise\<[DTLS](_dtls_.dtls.md)>
 
-*Defined in src/dtls.ts:60*
+*Defined in [src/dtls.ts:60](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L60)*
 
 Retrieves all necessary data before constructing a DTLS instance
 

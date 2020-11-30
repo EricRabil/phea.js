@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["effect/Mixer"](../modules/_effect_mixer_.md) / Mixer
+> [Globals](../README.md) / ["effect/Mixer"](../modules/_effect_mixer_.md) / Mixer
 
 # Class: Mixer
 
@@ -33,7 +33,7 @@ Overlays multiple effects over eachother.
 
 •  **effects**: [Effect](_effect_effect_.effect.md)[] = []
 
-*Defined in src/effect/Mixer.ts:16*
+*Defined in [src/effect/Mixer.ts:16](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L16)*
 
 Effects to apply
 
@@ -43,7 +43,7 @@ ___
 
 •  **lights**: [Light](_structs_light_.light.md)[] = []
 
-*Defined in src/effect/Mixer.ts:11*
+*Defined in [src/effect/Mixer.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L11)*
 
 Light states to track
 
@@ -53,7 +53,7 @@ ___
 
 •  **now**: number = Date.now()
 
-*Defined in src/effect/Mixer.ts:26*
+*Defined in [src/effect/Mixer.ts:26](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L26)*
 
 Shared reference to current unix timestamp, updated on each frame
 
@@ -63,7 +63,7 @@ ___
 
 •  **retainColor**: boolean = false
 
-*Defined in src/effect/Mixer.ts:21*
+*Defined in [src/effect/Mixer.ts:21](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L21)*
 
 Whether to mix into the previous color or overwrite the color each time
 
@@ -73,7 +73,7 @@ Whether to mix into the previous color or overwrite the color each time
 
 ▸ **applyEffectsOnLight**(`light`: [Light](_structs_light_.light.md)): void
 
-*Defined in src/effect/Mixer.ts:32*
+*Defined in [src/effect/Mixer.ts:32](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L32)*
 
 Applies the effects to a given light
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **applyEffectsOnLights**(`lights?`: [Light](_structs_light_.light.md)[]): void
 
-*Defined in src/effect/Mixer.ts:70*
+*Defined in [src/effect/Mixer.ts:70](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L70)*
 
 Applies the effect states to the given light states
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **removeFinishedEffects**(): void
 
-*Defined in src/effect/Mixer.ts:79*
+*Defined in [src/effect/Mixer.ts:79](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L79)*
 
 Purges effects with finished=true from the effects array
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **render**(): Promise\<void>
 
-*Defined in src/effect/Mixer.ts:93*
+*Defined in [src/effect/Mixer.ts:93](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L93)*
 
 Garbage collects, runs a render frame, applies to each light
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **renderEffects**(): Promise\<void[]>
 
-*Defined in src/effect/Mixer.ts:86*
+*Defined in [src/effect/Mixer.ts:86](https://github.com/EricRabil/phea.js/blob/66a21c7/src/effect/Mixer.ts#L86)*
 
 Runs a render frame on each effect
 

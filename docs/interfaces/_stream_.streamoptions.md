@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["stream"](../modules/_stream_.md) / StreamOptions
+> [Globals](../README.md) / ["stream"](../modules/_stream_.md) / StreamOptions
 
 # Interface: StreamOptions
 
@@ -23,7 +23,7 @@
 
 •  **engine**: [DTLS](../classes/_dtls_.dtls.md)
 
-*Defined in src/stream.ts:18*
+*Defined in [src/stream.ts:18](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L18)*
 
 DTLS color engine
 
@@ -33,7 +33,7 @@ ___
 
 •  **lights**: [Light](../classes/_structs_light_.light.md)[]
 
-*Defined in src/stream.ts:14*
+*Defined in [src/stream.ts:14](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L14)*
 
 Lights to be rendered
 
@@ -43,7 +43,7 @@ ___
 
 •  **renderCallback**: () => void \| Promise\<void>
 
-*Defined in src/stream.ts:22*
+*Defined in [src/stream.ts:22](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L22)*
 
 Called during a render frame
 
@@ -53,6 +53,6 @@ ___
 
 •  **updateFrequency**: number
 
-*Defined in src/stream.ts:10*
+*Defined in [src/stream.ts:10](https://github.com/EricRabil/phea.js/blob/66a21c7/src/stream.ts#L10)*
 
 Number of times a second to issue an update

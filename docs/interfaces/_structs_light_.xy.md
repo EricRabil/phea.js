@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/light"](../modules/_structs_light_.md) / XY
+> [Globals](../README.md) / ["structs/light"](../modules/_structs_light_.md) / XY
 
 # Interface: XY
 
@@ -21,7 +21,7 @@
 
 •  **x**: number
 
-*Defined in src/structs/light.ts:5*
+*Defined in [src/structs/light.ts:5](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L5)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 •  **y**: number
 
-*Defined in src/structs/light.ts:6*
+*Defined in [src/structs/light.ts:6](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L6)*

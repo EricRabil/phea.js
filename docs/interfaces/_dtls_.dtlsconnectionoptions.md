@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["dtls"](../modules/_dtls_.md) / DTLSConnectionOptions
+> [Globals](../README.md) / ["dtls"](../modules/_dtls_.md) / DTLSConnectionOptions
 
 # Interface: DTLSConnectionOptions
 
@@ -22,7 +22,7 @@
 
 •  **host**: string
 
-*Defined in src/dtls.ts:10*
+*Defined in [src/dtls.ts:10](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L10)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **psk**: string
 
-*Defined in src/dtls.ts:12*
+*Defined in [src/dtls.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L12)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **username**: string
 
-*Defined in src/dtls.ts:11*
+*Defined in [src/dtls.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/dtls.ts#L11)*

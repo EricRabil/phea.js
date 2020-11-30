@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "index"
+> [Globals](../README.md) / "index"
 
 # Module: "index"
 

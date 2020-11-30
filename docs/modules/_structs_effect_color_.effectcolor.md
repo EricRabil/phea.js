@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/effect-color"](_structs_effect_color_.md) / EffectColor
+> [Globals](../README.md) / ["structs/effect-color"](_structs_effect_color_.md) / EffectColor
 
 # Namespace: EffectColor
 
@@ -46,7 +46,7 @@
 
 •  **GREENBLUE**: [Color](_structs_color_.color.md) = mergeEvenly(GREEN, BLUE)
 
-*Defined in src/structs/color.ts:87*
+*Defined in [src/structs/color.ts:96](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L96)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 •  **REDBLUE**: [Color](_structs_color_.color.md) = mergeEvenly(RED, BLUE)
 
-*Defined in src/structs/color.ts:86*
+*Defined in [src/structs/color.ts:95](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L95)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 •  **REDGREEN**: [Color](_structs_color_.color.md) = mergeEvenly(RED, GREEN)
 
-*Defined in src/structs/color.ts:85*
+*Defined in [src/structs/color.ts:94](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L94)*
 
 ___
 
@@ -70,7 +70,9 @@ ___
 
 • `Optional` **alpha**: undefined \| number
 
-*Defined in src/structs/effect-color.ts:5*
+*Defined in [src/structs/effect-color.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L11)*
+
+opacity from 0.0-1.0, defaults to 1.0
 
 ___
 
@@ -80,7 +82,9 @@ ___
 
 *Inherited from [Color](_structs_color_.color.md).[blue](_structs_color_.color.md#blue)*
 
-*Defined in src/structs/color.ts:7*
+*Defined in [src/structs/color.ts:16](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L16)*
+
+blue value from 0-255
 
 ___
 
@@ -88,7 +92,9 @@ ___
 
 • `Optional` **brightness**: undefined \| number
 
-*Defined in src/structs/effect-color.ts:4*
+*Defined in [src/structs/effect-color.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L7)*
+
+brightness value from 0-255
 
 ___
 
@@ -98,7 +104,9 @@ ___
 
 *Inherited from [Color](_structs_color_.color.md).[green](_structs_color_.color.md#green)*
 
-*Defined in src/structs/color.ts:6*
+*Defined in [src/structs/color.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L12)*
+
+green value from 0-255
 
 ___
 
@@ -108,7 +116,9 @@ ___
 
 *Inherited from [Color](_structs_color_.color.md).[red](_structs_color_.color.md#red)*
 
-*Defined in src/structs/color.ts:5*
+*Defined in [src/structs/color.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L8)*
+
+red value from 0-255
 
 ## Functions
 
@@ -116,7 +126,7 @@ ___
 
 ▸ `Const`**isNumber**(`value`: unknown): boolean
 
-*Defined in src/structs/effect-color.ts:51*
+*Defined in [src/structs/effect-color.ts:57](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L57)*
 
 #### Parameters:
 
@@ -132,7 +142,7 @@ ___
 
 ▸ **make**(`color?`: [EffectColor](_structs_effect_color_.effectcolor.md)): [EffectColor](_structs_effect_color_.effectcolor.md)
 
-*Defined in src/structs/effect-color.ts:11*
+*Defined in [src/structs/effect-color.ts:17](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L17)*
 
 #### Parameters:
 
@@ -148,7 +158,7 @@ ___
 
 ▸ **mix**(`color1`: [EffectColor](_structs_effect_color_.effectcolor.md), `color2`: [EffectColor](_structs_effect_color_.effectcolor.md), `ratio`: number, `mixBrightness?`: boolean): [EffectColor](_structs_effect_color_.effectcolor.md)
 
-*Defined in src/structs/effect-color.ts:23*
+*Defined in [src/structs/effect-color.ts:29](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L29)*
 
 Mixes two colors
 
@@ -169,7 +179,7 @@ ___
 
 ▸ **modulate**(`color`: [EffectColor](_structs_effect_color_.effectcolor.md), `__namedParameters`: { alpha: undefined \| number ; blue: undefined \| number ; brightness: undefined \| number ; green: undefined \| number ; red: undefined \| number  }): [EffectColor](_structs_effect_color_.effectcolor.md)
 
-*Defined in src/structs/effect-color.ts:58*
+*Defined in [src/structs/effect-color.ts:64](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L64)*
 
 Modulates a color with the given parameters
 
@@ -188,7 +198,7 @@ Name | Type | Description |
 
 ▸ **dilute**(`__namedParameters`: { blue: number ; green: number ; red: number  }, `ratio`: number): object
 
-*Defined in src/structs/color.ts:16*
+*Defined in [src/structs/color.ts:25](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L25)*
 
 Amplifies/dilutes a color with the given ratio
 
@@ -213,7 +223,7 @@ ___
 
 ▸ **mergeEvenly**(...`colors`: [Color](_structs_color_.color.md)[]): [Color](_structs_color_.color.md)
 
-*Defined in src/structs/color.ts:49*
+*Defined in [src/structs/color.ts:58](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L58)*
 
 Takes a series of colors and merges them using an even ratio
 
@@ -231,7 +241,7 @@ ___
 
 ▸ **mergePartials**(`colors`: [Color](_structs_color_.color.md)[]): [Color](_structs_color_.color.md)
 
-*Defined in src/structs/color.ts:37*
+*Defined in [src/structs/color.ts:46](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L46)*
 
 Merges a series of expectedly partial colors into a single color
 
@@ -249,7 +259,7 @@ ___
 
 ▸ **sum**\<T>(`key`: T, `colors`: [Color](_structs_color_.color.md)[]): number
 
-*Defined in src/structs/color.ts:29*
+*Defined in [src/structs/color.ts:38](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L38)*
 
 Returns the sum of a given color property
 
@@ -274,7 +284,7 @@ Name | Type | Description |
 
 ▪  **BLACK**: object
 
-*Defined in src/structs/color.ts:79*
+*Defined in [src/structs/color.ts:88](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L88)*
 
 #### Properties:
 
@@ -290,7 +300,7 @@ ___
 
 ▪  **BLUE**: object
 
-*Defined in src/structs/color.ts:67*
+*Defined in [src/structs/color.ts:76](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L76)*
 
 #### Properties:
 
@@ -306,7 +316,7 @@ ___
 
 ▪ `Const` **EMPTY\_COLOR**: object
 
-*Defined in src/structs/effect-color.ts:9*
+*Defined in [src/structs/effect-color.ts:15](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/effect-color.ts#L15)*
 
 #### Properties:
 
@@ -322,7 +332,7 @@ ___
 
 ▪  **GREEN**: object
 
-*Defined in src/structs/color.ts:61*
+*Defined in [src/structs/color.ts:70](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L70)*
 
 #### Properties:
 
@@ -338,7 +348,7 @@ ___
 
 ▪  **RED**: object
 
-*Defined in src/structs/color.ts:55*
+*Defined in [src/structs/color.ts:64](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L64)*
 
 #### Properties:
 
@@ -354,7 +364,7 @@ ___
 
 ▪  **WHITE**: object
 
-*Defined in src/structs/color.ts:73*
+*Defined in [src/structs/color.ts:82](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/color.ts#L82)*
 
 #### Properties:
 

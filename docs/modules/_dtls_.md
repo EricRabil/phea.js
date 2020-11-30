@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "dtls"
+> [Globals](../README.md) / "dtls"
 
 # Module: "dtls"
 

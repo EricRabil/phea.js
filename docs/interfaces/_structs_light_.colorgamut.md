@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / ["structs/light"](../modules/_structs_light_.md) / ColorGamut
+> [Globals](../README.md) / ["structs/light"](../modules/_structs_light_.md) / ColorGamut
 
 # Interface: ColorGamut
 
@@ -22,7 +22,7 @@
 
 •  **blue**: [XY](_structs_light_.xy.md)
 
-*Defined in src/structs/light.ts:12*
+*Defined in [src/structs/light.ts:12](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L12)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 •  **green**: [XY](_structs_light_.xy.md)
 
-*Defined in src/structs/light.ts:11*
+*Defined in [src/structs/light.ts:11](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L11)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 •  **red**: [XY](_structs_light_.xy.md)
 
-*Defined in src/structs/light.ts:10*
+*Defined in [src/structs/light.ts:10](https://github.com/EricRabil/phea.js/blob/66a21c7/src/structs/light.ts#L10)*

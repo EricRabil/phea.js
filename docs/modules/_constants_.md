@@ -1,6 +1,6 @@
-**[phea.js](../README.md)**
+**[@ericrabil/phea.js](../README.md)**
 
-> [Globals](../globals.md) / "Constants"
+> [Globals](../README.md) / "Constants"
 
 # Module: "Constants"
 
@@ -22,7 +22,7 @@
 
 • `Const` **ADDRTYPE\_LIGHTID**: 0 = 0
 
-*Defined in src/Constants.ts:10*
+*Defined in [src/Constants.ts:10](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L10)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • `Const` **COLORSPACE\_RGB**: 0 = 0
 
-*Defined in src/Constants.ts:8*
+*Defined in [src/Constants.ts:8](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L8)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • `Const` **COLORSPACE\_XY**: 1 = 1
 
-*Defined in src/Constants.ts:7*
+*Defined in [src/Constants.ts:7](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L7)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • `Const` **HUE\_STREAM**: number[] = [0x48, 0x75, 0x65, 0x53, 0x74, 0x72, 0x65, 0x61, 0x6d]
 
-*Defined in src/Constants.ts:1*
+*Defined in [src/Constants.ts:1](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L1)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • `Const` **RESERVED**: 0 = 0
 
-*Defined in src/Constants.ts:5*
+*Defined in [src/Constants.ts:5](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L5)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • `Const` **VERSION\_MAJOR**: 1 = 1
 
-*Defined in src/Constants.ts:3*
+*Defined in [src/Constants.ts:3](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L3)*
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 • `Const` **VERSION\_MINOR**: 0 = 0
 
-*Defined in src/Constants.ts:4*
+*Defined in [src/Constants.ts:4](https://github.com/EricRabil/phea.js/blob/66a21c7/src/Constants.ts#L4)*
