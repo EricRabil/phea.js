@@ -3,10 +3,15 @@ Node.JS implementation of the Hue Entertainment API but it works
 
 I wrote this library because the existing Node.JS Hue Entertainment API implementations were simply painful to use.
 
+## Installation
+```
+yarn add @ericrabil/phea.js
+```
+
 ## Example
 
 ```js
-import HueStream, { LoopEffect, Color } from "phea.js";
+import HueStream, { LoopEffect, Color } from "@ericrabil/phea.js";
 // Equivalent, for the plebeians:
 const { HueStream, LoopEffect, Color } = require("phea.js");
 
