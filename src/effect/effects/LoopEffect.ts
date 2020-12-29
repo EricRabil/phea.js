@@ -1,3 +1,4 @@
+import { Color } from "../../structs/color";
 import { EffectColor } from "../../structs/effect-color";
 import { Light } from "../../structs/light";
 import { Effect } from "../Effect";
@@ -11,6 +12,26 @@ export interface LoopOptions {
  * Smooth transitions between each color
  */
 export class LoopEffect extends Effect {
+    public static roygbiv(framesPerColor = 100): LoopEffect {
+        return new LoopEffect({
+            colors: [
+                Color.RED,
+                Color.ORANGE,
+                Color.YELLOW,
+                Color.GREEN,
+                Color.BLUE,
+                Color.INDIGO,
+                Color.VIOLET,
+                Color.INDIGO,
+                Color.BLUE,
+                Color.GREEN,
+                Color.YELLOW,
+                Color.ORANGE
+            ],
+            framesPerColor
+        })
+    }
+
     public constructor(public options: LoopOptions) {
         super();
     }

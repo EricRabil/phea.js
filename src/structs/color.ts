@@ -67,6 +67,18 @@ export namespace Color {
         blue: 0
     }
 
+    export const ORANGE: Color = {
+        red: 255,
+        green: 127,
+        blue: 0
+    }
+
+    export const YELLOW: Color = {
+        red: 255,
+        green: 255,
+        blue: 0
+    }
+
     export const GREEN: Color = {
         red: 0,
         green: 255,
@@ -77,6 +89,18 @@ export namespace Color {
         red: 0,
         green: 0,
         blue: 255
+    }
+
+    export const INDIGO: Color = {
+        red: 75,
+        green: 0,
+        blue: 130
+    };
+
+    export const VIOLET: Color = {
+        red: 148,
+        green: 0,
+        blue: 211
     }
 
     export const WHITE: Color = {

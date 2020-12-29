@@ -1,4 +1,5 @@
 import { EffectColor } from "../../structs/effect-color";
+import { Light } from "../../structs/light";
 import { Effect } from "../Effect";
 
 export interface TransitionFrame {
@@ -13,10 +14,10 @@ export interface TransitionFrame {
 }
 
 /**
- * Smoothly transitions between configured frames
+ * Keyframe compositor
  */
 export class TransitionEffect extends Effect {
-    constructor(public frames: TransitionFrame[]) {
+    constructor(public frames: TransitionFrame[], public lights: Light[] | undefined = undefined) {
         super();
         
         this.frames = frames.sort(({ start: start1 }, { start: start2 }) => start1 - start2).reverse();
@@ -32,7 +33,9 @@ export class TransitionEffect extends Effect {
         alpha: 0
     };
 
-    getColor(): EffectColor {
+    getColor(light: Light): EffectColor | undefined {
+        if (this.lights && !this.lights.includes(light)) return;
+
         return this.currentColor;
     }
 
