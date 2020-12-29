@@ -5,7 +5,7 @@ I wrote this library because the existing Node.JS Hue Entertainment API implemen
 
 ## Installation
 ```
-yarn add @ericrabil/phea.js
+yarn add phea.js
 ```
 
 ## Example
@@ -13,7 +13,7 @@ yarn add @ericrabil/phea.js
 For a real example, take a look at [spotihue](https://github.com/EricRabil/spotihue)
 
 ```js
-import HueStream, { LoopEffect, Color } from "@ericrabil/phea.js";
+import HueStream, { LoopEffect, Color } from "phea.js";
 // Equivalent, for the plebeians:
 const { HueStream, LoopEffect, Color } = require("phea.js");
 
