@@ -47,6 +47,7 @@ export class Mixer {
 
             if (typeof layerColor.brightness !== "number") layerColor.brightness = 255;
             if (typeof layerColor.alpha !== "number") layerColor.alpha = 1.0;
+            if (!layerColor.alpha) continue;
 
             const alpha = layerColor.alpha;
             const prevLayersAlpha = 1.0 - alpha;
