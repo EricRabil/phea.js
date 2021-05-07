@@ -1,9 +1,12 @@
 {
   "name": "phea.js",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "Node.JS implementation of the Hue Entertainment API but it works",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/EricRabil/phea.js.git",
   "author": "Eric Rabil <ericjrabil@gmail.com>",
   "license": "MIT",
