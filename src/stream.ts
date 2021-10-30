@@ -1,5 +1,6 @@
 import Api from "node-hue-api/lib/api/Api";
 import DTLS from "./dtls";
+import { Frame } from "./structs/frame";
 import { Light } from "./structs/light";
 import { sleep } from "./util";
 
@@ -54,14 +55,33 @@ export class Stream {
         }
     }
 
+    private lastFrames: Frame[] = [];
+
     /**
      * Renders a single frame
      */
     renderSingleFrame() {
         const frames = this.options.lights.map(light => light.frame);
 
+        const changed = frames.some((frame, index) => {
+            const oldFrame = this.lastFrames[index];
+            if (!oldFrame) return true;
+            
+            return !(
+                frame.color.red === oldFrame.color.red
+             && frame.color.green === oldFrame.color.green
+             && frame.color.blue === oldFrame.color.blue
+             && frame.brightness === oldFrame.brightness
+             && frame.gamut?.blue === oldFrame.gamut?.blue
+             && frame.gamut?.green === oldFrame.gamut?.green
+             && frame.gamut?.red === oldFrame.gamut?.red
+            );
+        });
+
+        this.lastFrames = frames;
+
         return Promise.all([
-            this.options.engine.sendFrames(frames),
+            changed ? this.options.engine.sendFrames(frames) : new Promise(resolve => setTimeout(resolve)),
             this.options.renderCallback()
         ]);
     }

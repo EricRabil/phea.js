@@ -16,6 +16,7 @@ export * from "./structs/light";
 
 export * from "./Constants";
 export * from "./dtls";
+export { default as DTLS } from "./dtls";
 export * from "./hue-stream";
 export * from "./stream";
 export * as Util from "./util";

@@ -32,6 +32,13 @@ export class LoopEffect extends Effect {
         })
     }
 
+    public static solidEffect(color: EffectColor): LoopEffect {
+        return new LoopEffect({
+            colors: [color],
+            framesPerColor: 1
+        })
+    }
+
     public constructor(public options: LoopOptions) {
         super();
     }
@@ -42,6 +49,20 @@ export class LoopEffect extends Effect {
     currentColor: EffectColor = this.options.colors[0];
     nextColor: EffectColor = this.options.colors[1];
 
+    roll() {
+        this.frame = 1;
+
+        if (this.currentIndex >= this.options.colors.length - 1) {
+            this.currentIndex = 0;
+        } else this.currentIndex += 1;
+        
+        let nextIndex = this.currentIndex + 1;
+        if (nextIndex >= this.options.colors.length) nextIndex = 0;
+
+        this.currentColor = this.options.colors[this.currentIndex];
+        this.nextColor = this.options.colors[nextIndex];
+    }
+
     resultColor: EffectColor;
 
     getColor(): EffectColor {
@@ -49,23 +70,18 @@ export class LoopEffect extends Effect {
     }
 
     render(): void {
+        if (this.options.colors.length === 1) {
+            this.resultColor = this.options.colors[0];
+            return;
+        }
+
         if (this.frame === this.options.framesPerColor) {
-            this.frame = 1;
-
-            if (this.currentIndex === this.options.colors.length - 1) {
-                this.currentIndex = 0;
-            } else this.currentIndex += 1;
-            
-            let nextIndex = this.currentIndex + 1;
-            if (nextIndex === this.options.colors.length) nextIndex = 0;
-
-            this.currentColor = this.options.colors[this.currentIndex];
-            this.nextColor = this.options.colors[nextIndex];
+            this.roll();
         } else this.frame += 1;
 
         const progress = this.frame / this.options.framesPerColor;
 
-        this.resultColor = EffectColor.mix(this.currentColor, this.nextColor, 1.0 - progress);
+        this.resultColor = EffectColor.mix(this.currentColor, this.nextColor, 1.0 - progress, true);
     }
 
     enabled: boolean = true;

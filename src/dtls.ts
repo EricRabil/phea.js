@@ -1,7 +1,8 @@
-import dtls, { Socket } from "@nodertc/dtls";
+const dtls = require("@nodertc/dtls");
 import axios, { AxiosInstance } from "axios";
 import { EventEmitter } from "events";
 import Api from "node-hue-api/lib/api/Api";
+import { Socket } from "./@types/webrtc-dtls";
 import { Frame } from "./structs/frame";
 import { ColorGamut } from "./structs/light";
 import { HueLog } from "./util";
@@ -16,6 +17,7 @@ export interface DTLSConnectionOptions {
  * @noInheritDoc
  */
 export default interface DTLS extends EventEmitter {
+    on(event: "frames", cb: (frames: Frame[]) => void): this;
     on(event: "connected", cb: Function): this;
     on(event: "error", cb: Function): this;
     on(event: "data", cb: (data: Buffer) => unknown): this;
@@ -23,6 +25,7 @@ export default interface DTLS extends EventEmitter {
     on(event: "closed", cb: Function): this;
     on(event: string, cb: Function): this;
 
+    once(event: "frames", cb: (frames: Frame[]) => void): this;
     once(event: "connected", cb: Function): this;
     once(event: "error", cb: Function): this;
     once(event: "timeout", cb: Function): this;
@@ -37,7 +40,7 @@ export default interface DTLS extends EventEmitter {
  */
 export default class DTLS extends EventEmitter {
     private http: AxiosInstance;
-    private socket: Socket;
+    socket: Socket;
 
     public running = false;
     public sequenceNumber = 0;
@@ -127,7 +130,7 @@ export default class DTLS extends EventEmitter {
     /**
      * Attempts to connect with the session, resolving upon handshake completion and rejecting on failure before that point
      */
-    private doConnect(): Promise<void> {
+    doConnect(): Promise<void> {
         return new Promise((resolve, reject) => {
             this.socket = dtls.connect({
                 type: "udp4",
@@ -171,14 +174,17 @@ export default class DTLS extends EventEmitter {
      * @param frames frames to send
      */
     sendFrames(frames: Frame[]): Promise<void> {
-        return new Promise((resolve, reject) => this.socket.write(Frame.asBuffer(frames, this.sequenceNumber++), undefined, (error) => error ? reject(error) : resolve()));
+        return Promise.all([
+            new Promise<void>((resolve, reject) => this.socket.write(Frame.asBuffer(frames, this.sequenceNumber++), undefined, (error) => error ? reject(error) : resolve())),
+            new Promise<void>(resolve => this.emit("frames", frames) && resolve())
+        ]) as unknown as Promise<void>
     }
 
     /**
      * Enables/disables streaming for the group
      * @param active whether to enable/disable
      */
-    private async setActive(active: boolean) {
+    async setActive(active: boolean) {
         this.running = active;
 
         await this.http.put(`/groups/${this.group}`, {

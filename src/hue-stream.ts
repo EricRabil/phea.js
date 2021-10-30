@@ -6,6 +6,7 @@ import { Stream, StreamOptions } from "./stream";
 import { Light } from "./structs/light";
 import { Effect } from "./effect/Effect";
 import { EventEmitter } from "events";
+import { Frame } from "./structs/frame";
 
 export interface HueStreamOptions {
     updateFrequency: number;
@@ -21,12 +22,14 @@ export interface HueStreamOptions {
  * @noInheritDoc
  */
 export interface HueStream extends EventEmitter {
+    on(event: "frames", cb: (frames: Frame[]) => void): this;
     on(event: "connected", cb: Function): this;
     on(event: "error", cb: Function): this;
     on(event: "timeout", cb: Function): this;
     on(event: "closed", cb: Function): this;
     on(event: string, cb: Function): this;
 
+    once(event: "frames", cb: (frames: Frame[]) => void): this;
     once(event: "connected", cb: Function): this;
     once(event: "error", cb: Function): this;
     once(event: "timeout", cb: Function): this;
@@ -143,7 +146,7 @@ export class HueStream extends EventEmitter {
         return new HueStream(options as HueStreamOptions);
     }
 
-    private constructor(public options: HueStreamOptions) {
+    public constructor(public options: HueStreamOptions) {
         super();
 
         this.mixer.lights = options.lights;
@@ -169,6 +172,8 @@ export class HueStream extends EventEmitter {
         });
 
         this.options.engine.on("error", () => this.emit("error"));
+
+        this.options.engine.on("frames", frames => this.emit("frames", frames));
     }
 
     /**

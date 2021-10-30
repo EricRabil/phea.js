@@ -16,7 +16,7 @@ export interface ColorGamut {
  * Manages the state of a specific light. Mutations here will be directly visible on your lights as long as they aren't overwritten by an effect.
  */
 export class Light {
-    private constructor() {}
+    constructor() {}
     
     public static async make(api: Api, id: number | string) {
         const light = new Light();

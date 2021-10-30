@@ -38,8 +38,8 @@ export namespace EffectColor {
 
             if (hasB1 && hasB2) {
                 color.brightness = (brightness1! * ratio) + (brightness2! * iratio);
-            } else {
-                color.brightness = brightness1 || brightness2;
+            } else if (hasB1 || hasB2) {
+                color.brightness = hasB1 ? brightness1 : hasB2 ? brightness2 : undefined;
             }
         }
 
